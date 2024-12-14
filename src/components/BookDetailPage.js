@@ -11,7 +11,7 @@ const BookDetailPage = () => {
   useEffect(() => {
     const fetchBook = async () => {
       try {
-        const response = await axios.get(`https://67281907270bd0b975545491.mockapi.io/Book/${id}`);
+        const response = await axios.get(`https://675d522afe09df667f65f39a.mockapi.io/Book/${id}`);
         setBook(response.data);
         setMemoText(response.data.memo || ''); // 메모 값 초기화
       } catch (error) {
@@ -24,7 +24,7 @@ const BookDetailPage = () => {
 
   const handleUpdateMemo = async () => {
     try {
-      await axios.put(`https://67281907270bd0b975545491.mockapi.io/Book/${id}`, { memo: memoText });
+      await axios.put(`https://675d522afe09df667f65f39a.mockapi.io/Book/${id}`, { memo: memoText });
       alert('메모가 저장되었습니다.');
     } catch (error) {
       console.error('메모 저장 중 오류 발생:', error);
@@ -33,7 +33,7 @@ const BookDetailPage = () => {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`https://67281907270bd0b975545491.mockapi.io/Book/${id}`);
+      await axios.delete(`https://675d522afe09df667f65f39a.mockapi.io/Book/${id}`);
       alert('책이 삭제되었습니다.');
       navigate('/mypage'); // 마이페이지로 이동
     } catch (error) {

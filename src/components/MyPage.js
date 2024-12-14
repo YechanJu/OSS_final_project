@@ -9,7 +9,7 @@ const MyPage = ({ onSelect }) => {
   useEffect(() => {
     const fetchFavorites = async () => {
       try {
-        const response = await axios.get('https://67281907270bd0b975545491.mockapi.io/Book');
+        const response = await axios.get('https://675d522afe09df667f65f39a.mockapi.io/Book');
         setFavorites(response.data);
       } catch (error) {
         console.error('찜 목록을 가져오는 데 실패했습니다:', error);
@@ -21,7 +21,7 @@ const MyPage = ({ onSelect }) => {
 
   const handleDelete = async (id) => {
     try {
-      await axios.delete(`https://67281907270bd0b975545491.mockapi.io/Book/${id}`);
+      await axios.delete(`https://675d522afe09df667f65f39a.mockapi.io/Book/${id}`);
       setFavorites(favorites.filter((book) => book.id !== id));
     } catch (error) {
       console.error('삭제 중 오류 발생:', error);
