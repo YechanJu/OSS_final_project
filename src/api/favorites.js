@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://675d522afe09df667f65f39a.mockapi.io/Book'; // Mock API 주소
+const API_URL = 'https://67281907270bd0b975545491.mockapi.io/Book'; // Mock API 주소
 
 export const addToFavorites = async (book) => {
   try {

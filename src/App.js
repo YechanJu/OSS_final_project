@@ -76,7 +76,7 @@ const App = () => {
 
   const handleFavorite = async (book) => {
     try {
-      const response = await axios.post('https://675d522afe09df667f65f39a.mockapi.io/Book', {
+      const response = await axios.post('https://67281907270bd0b975545491.mockapi.io/Book', {
         title: book.title,
         authors: book.authors,
         publisher: book.publisher,
